@@ -36,7 +36,6 @@ return [
     | https://jeroennoten.github.io/Laravel-AdminLTE/sections/configuration/basic_configuration.html
     |
     */
-
     'title' => 'Kasir2 Fadli',
     'title_prefix' => '',
     'title_postfix' => '',
