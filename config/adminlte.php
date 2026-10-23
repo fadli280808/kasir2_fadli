@@ -242,7 +242,8 @@ return [
 
         // Load the optional extended color palette (adminlte-colors.css). It
         // provides the .bg-*, .text-bg-*, .card-* and .callout-* classes for
-        // the extended set of AdminLTE colors (navy, olive, sky, ...).
+        // the extended set of AdminLTE colors (navy, olive, sk 
+        // , ...).
 
         'extended_colors' => false,
 
@@ -761,16 +762,11 @@ return [
     | https://jeroennoten.github.io/Laravel-AdminLTE/sections/configuration/menu.html
     |
     */
-
-    'menu' => [
+'menu' => [
         // Navbar items:
         [
             'type' => 'navbar-search',
             'text' => 'search',
-            'topnav_right' => true,
-        ],
-        [
-            'type' => 'darkmode-widget',
             'topnav_right' => true,
         ],
         [
@@ -789,24 +785,97 @@ return [
             'can' => 'manage-blog',
         ],
         [
-            'text' => 'Dashboard',
-            'url' => 'admin/Dashboard',
-            'icon' => 'bi bi-file-earmark',
+            'text' => 'jurusans',
+            'url' => 'admin/jurusans',
+            'icon' => 'far fa-fw fa-file',
+            'label' => 4,
             'label_color' => 'success',
         ],
         [
+            'text' => 'jenjangs',
+            'url' => 'admin/jenjangs',
+            'icon' => 'far fa-fw fa-file',
+            'label' => 4,
+            'label_color' => 'success',
+        ],
+        [
+            'text' => 'kelas',
+            'url' => 'admin/kelas',
+            'icon' => 'far fa-fw fa-file',
+            'label' => 4,
+            'label_color' => 'success',
+        ],
+        [
+            'text' => 'siswa',
+            'url' => 'admin/siswa',
+            'icon' => 'far fa-fw fa-file',
+            'label' => 4,
+            'label_color' => 'success',
+        ],
+        ['header' => 'account_settings'],
+        [
+            'text' => 'profile',
+            'url' => 'admin/settings',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
+            'text' => 'change_password',
+            'url' => 'admin/settings',
+            'icon' => 'fas fa-fw fa-lock',
+        ],
+        [
             'text' => 'Data Master',
-            'icon' => 'bi bi-share',
+            'icon' => 'fas fa-fw fa-share',
             'submenu' => [
                 [
-                    'text' => 'Data Siswa',
+                    'text' => 'siswa',
                     'url' => '#',
                 ],
-                     [
-                    'text' => 'Data Guru',
+                [
+                    'text' => 'Guru',
+                    'url' => '#',
+                    'submenu' => [
+                        [
+                            'text' => 'level_two',
+                            'url' => '#',
+                        ],
+                        [
+                            'text' => 'level_two',
+                            'url' => '#',
+                            'submenu' => [
+                                [
+                                    'text' => 'level_three',
+                                    'url' => '#',
+                                ],
+                                [
+                                    'text' => 'level_three',
+                                    'url' => '#',
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+                [
+                    'text' => 'level_one',
                     'url' => '#',
                 ],
             ],
+        ],
+        ['header' => 'labels'],
+        [
+            'text' => 'important',
+            'icon_color' => 'red',
+            'url' => '#',
+        ],
+        [
+            'text' => 'warning',
+            'icon_color' => 'yellow',
+            'url' => '#',
+        ],
+        [
+            'text' => 'information',
+            'icon_color' => 'cyan',
+            'url' => '#',
         ],
     ],
 
