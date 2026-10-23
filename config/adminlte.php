@@ -762,13 +762,15 @@ return [
     | https://jeroennoten.github.io/Laravel-AdminLTE/sections/configuration/menu.html
     |
     */
-'menu' => [
+
+    'menu' => [
         // Navbar items:
         [
             'type' => 'navbar-search',
             'text' => 'search',
             'topnav_right' => true,
         ],
+        
         [
             'type' => 'fullscreen-widget',
             'topnav_right' => true,
@@ -785,31 +787,27 @@ return [
             'can' => 'manage-blog',
         ],
         [
-            'text' => 'jurusans',
-            'url' => 'admin/jurusans',
+            'text' => 'jurusan',
+            'url' => 'admin/jurusan',
             'icon' => 'far fa-fw fa-file',
-            'label' => 4,
             'label_color' => 'success',
         ],
         [
-            'text' => 'jenjangs',
-            'url' => 'admin/jenjangs',
+            'text' => 'jenjang',
+            'url' => 'admin/jenjang',
             'icon' => 'far fa-fw fa-file',
-            'label' => 4,
             'label_color' => 'success',
         ],
         [
             'text' => 'kelas',
             'url' => 'admin/kelas',
             'icon' => 'far fa-fw fa-file',
-            'label' => 4,
             'label_color' => 'success',
         ],
         [
             'text' => 'siswa',
             'url' => 'admin/siswa',
             'icon' => 'far fa-fw fa-file',
-            'label' => 4,
             'label_color' => 'success',
         ],
         ['header' => 'account_settings'],
@@ -824,15 +822,15 @@ return [
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
-            'text' => 'Data Master',
+            'text' => 'data master',
             'icon' => 'fas fa-fw fa-share',
             'submenu' => [
                 [
-                    'text' => 'siswa',
+                    'text' => 'level_one',
                     'url' => '#',
                 ],
                 [
-                    'text' => 'Guru',
+                    'text' => 'level_one',
                     'url' => '#',
                     'submenu' => [
                         [

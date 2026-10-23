@@ -11,22 +11,21 @@ return new class extends Migration
      */
     public function up(): void
 {
-    Schema::create('jurusans', function (Blueprint $table) {
+    Schema::create('jurusan', function (Blueprint $table) {
         $table->id();
-        $table->string('kode_jurusans')->unique();
-        $table->string('nama_jurusans');
+        $table->string('kode_jurusan')->unique();
+        $table->string('nama_jurusan');
         $table->text('keterangan')->nullable();
         $table->enum('status', ['aktif', 'nonaktif'])->default('aktif');
-       $table->timestamp('created_at')->nullable();
+        $table->timestamp('created_at')->nullable();
         $table->timestamp('updated_at')->nullable();
     });
 }
-
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('jurusans');
+        Schema::dropIfExists('jurusan');
     }
 };
