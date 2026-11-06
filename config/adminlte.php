@@ -787,14 +787,14 @@ return [
             'can' => 'manage-blog',
         ],
         [
-            'text' => 'jurusan',
-            'url' => 'admin/jurusan',
+            'text' => 'Jurusan',
+            'url' => 'jurusan',
             'icon' => 'far fa-fw fa-file',
             'label_color' => 'success',
         ],
         [
             'text' => 'jenjang',
-            'url' => 'admin/jenjang',
+            'url' => 'jenjang',
             'icon' => 'far fa-fw fa-file',
             'label_color' => 'success',
         ],

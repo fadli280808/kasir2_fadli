@@ -12,9 +12,6 @@
         <div class="card-header">
             <h3 class="card-title">Daftar jurusan</h3>
             <div class="card-tools">
-                <a href="{{ route('jurusan.cetak-pdf') }}" class="btn btn-danger btn-sm" target="_blank">
-                    <i class="fas fa-file-pdf"></i> Cetak PDF
-                </a>
                 <a href="{{ route('jurusan.create') }}" class="btn btn-primary btn-sm">
                     <i class="fas fa-plus"></i> Tambah jurusan
                 </a>
