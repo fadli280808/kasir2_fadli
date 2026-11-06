@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Tambah Jenjang')
+@section('title', 'Tambah Jurusan')
 
 @section('content_header')
-    <h1>Tambah Jenjang</h1>
+    <h1>Tambah Jurusan</h1>
 @stop
 
 @section('content')
@@ -13,7 +13,7 @@
                 @csrf 
 
                 <div class="form-group">
-                    <label for="nama_jenjang">Nama Jurusan</label>
+                    <label for="nama_jurusan">Nama Jurusan</label>
                     <input type="text" name="nama_jurusan" class="form-control @error('nama_jurusan') is-invalid @enderror" id="nama_jurusan" required value="{{ old('nama_jurusan') }}">
                     @error('nama_jurusan')
                         <span class="invalid-feedback" role="alert">
